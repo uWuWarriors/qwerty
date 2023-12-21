@@ -12,7 +12,7 @@ ToursBase_IS310Entities toursBase_IS310Entities = new ToursBase_IS310Entities();
 var my = textBox1.Text
 Изменение:
 TourBaseEntities.Hotels.Add(my);
-
+tourspr420Entities.GetContext().SaveChanges();
 Разметка:
 <Grid>
         <Grid.RowDefinitions>
