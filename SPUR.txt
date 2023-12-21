@@ -39,3 +39,33 @@ private void Button_Click(object sender, RoutedEventArgs e)
     window2 win2 = new window2();
     win2.Show();
 }
+Window_Edit:
+  public partial class Window_Edit : Window
+    {
+        //private  _current = new Hote();
+        public Window_Edit()
+        {
+            InitializeComponent();
+            //nameBD nameBD = new nameBD();
+            //if (selected != null)
+            //    _current = selectedHotel;
+            //DataContext = _current;
+          
+        }
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow win1 = new MainWindow();
+            win1.Show();
+
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var my = Test.Text;
+        }
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            //TourBaseEntities.GetContext().Hotels.Add(my);
+            //tourspr420Entities.GetContext().SaveChanges();
+        }
+    }
+}
