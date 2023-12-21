@@ -19,10 +19,15 @@ namespace CLOWN
     /// </summary>
     public partial class Window_Edit : Window
     {
+        //private  _current = new Hote();
         public Window_Edit()
         {
             InitializeComponent();
             //nameBD nameBD = new nameBD();
+            //if (selected != null)
+            //    _current = selectedHotel;
+            //DataContext = _current;
+          
         }
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
@@ -37,6 +42,7 @@ namespace CLOWN
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
             //TourBaseEntities.GetContext().Hotels.Add(my);
+            //tourspr420Entities.GetContext().SaveChanges();
         }
     }
 }
