@@ -13,7 +13,7 @@ var my = textBox1.Text
 Изменение:
 TourBaseEntities.Hotels.Add(my);
 tourspr420Entities.GetContext().SaveChanges();
-Разметка:
+Разметка Main:
 <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -30,6 +30,26 @@ tourspr420Entities.GetContext().SaveChanges();
         <StackPanel HorizontalAlignment="Center"  Grid.Row="1" Orientation="Horizontal">
             <Button x:Name="updateButton" Content="Обновить" Click="updateButton_Click" />
             <Button x:Name="deleteButton" Content="Удалить" Click="deleteButton_Click" />
+        </StackPanel>
+    </Grid>
+
+Разметка Edit:
+ <Grid>
+        <StackPanel Height="auto" HorizontalAlignment="Left" VerticalAlignment="Top" Width="Auto">
+            <Label  Content="Модель" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Test" Width="100" Height="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
+        <StackPanel Height="auto" HorizontalAlignment="Left" VerticalAlignment="Center" Width="Auto">
+            <Label  Content="Модель" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox Width="100" Height="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0"/>
+        </StackPanel>
+        <StackPanel Height="auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="Auto">
+            <Label  Content="Модель" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox Width="100" Height="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0"/>
+        </StackPanel>
+        <StackPanel Height="auto" HorizontalAlignment="Right" VerticalAlignment="Center" Width="Auto">
+            <Button x:Name="EditButton" Content="Изменить" Click="EditButton_Click"/>
+            <Button x:Name="CancelButton" Content="Удалить" Click="cancelButton_Click" Margin="0,10,0,0" />
         </StackPanel>
     </Grid>
 
